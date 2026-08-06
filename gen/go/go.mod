@@ -1,4 +1,4 @@
-module github.com/anthropics/premierpro-mcp/gen/go
+module github.com/sidhantpande/AI-Video-Editor/gen/go
 
 go 1.26.1
 
