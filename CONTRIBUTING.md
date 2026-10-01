@@ -19,7 +19,7 @@ Thank you for your interest in contributing to the Adobe Premiere Pro MCP server
 2. Clone your fork:
    ```bash
    git clone https://github.com/YOUR_USERNAME/AI-Video-Editor.git
-   cd PremierProMCP
+   cd AI-Video-Editor
    ```
 3. Create a feature branch:
    ```bash
