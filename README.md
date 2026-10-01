@@ -55,7 +55,7 @@ particular OS/Premiere build.
 | 23.x | 2023 | Manifest target; live matrix pending |
 | 24.x | 2024 | Manifest target; live matrix pending |
 | 25.x | 2025 | Primary development target; live matrix pending |
-| 26.x | 2026 | Beta manifest target; live matrix pending |
+| 26.x | 2026 | 26.5.2: 8 core CEP workflows tested on macOS arm64; broader matrix pending |
 
 The CEP bridge targets **macOS** and **Windows** and declares Premiere Pro 14.0+ in its extension manifest.
 
@@ -100,7 +100,7 @@ Full architecture diagram: [`docs/architecture.md`](docs/architecture.md)
 ## Project Structure
 
 ```
-PremierProMCP/
+AI-Video-Editor/
 +-- go-orchestrator/          # Go -- MCP server & task orchestrator
 |   +-- cmd/server/           #   Entry point
 |   +-- internal/             #   Core packages
@@ -329,8 +329,8 @@ LAN interface unless an authenticated TLS reverse proxy protects it.
 We are actively looking for testers and contributors!
 
 - **Test the server** with your Premiere Pro setup and [report results](https://github.com/sidhantpande/AI-Video-Editor/issues/1)
-- **Request features** you need for your workflow in [the feature tracker](https://github.com/sidhantpande/AI-Video-Editor/issues/2)
-- **Report bugs** with reproduction steps in [the bug tracker](https://github.com/sidhantpande/AI-Video-Editor/issues/3)
+- **Request features** you need for your workflow using [a separate feature request](https://github.com/sidhantpande/AI-Video-Editor/issues/new?template=feature_request.md)
+- **Report bugs** with reproduction steps using [a separate bug report](https://github.com/sidhantpande/AI-Video-Editor/issues/new?template=bug_report.md)
 - **Confirm your Premiere Pro version** works in [the compatibility tracker](https://github.com/sidhantpande/AI-Video-Editor/issues/4)
 - **Start or join a discussion** in [GitHub Discussions](https://github.com/sidhantpande/AI-Video-Editor/discussions)
 - **Read the [Contributing Guide](CONTRIBUTING.md)** to get started with development
