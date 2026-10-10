@@ -101,7 +101,12 @@ export class ChatLoop {
     this.systemPrompt = buildSystemPrompt(mcpClient.getToolCount());
 
     if (auth.provider === "anthropic") {
-      this.anthropic = new Anthropic({ apiKey: auth.apiKey });
+      this.anthropic = new Anthropic({
+        apiKey: auth.apiKey,
+        defaultHeaders: process.env.ANTHROPIC_WORKSPACE_ID
+          ? { "anthropic-workspace-id": process.env.ANTHROPIC_WORKSPACE_ID }
+          : undefined,
+      });
     } else {
       this.openai = new OpenAI({ apiKey: auth.apiKey });
     }
